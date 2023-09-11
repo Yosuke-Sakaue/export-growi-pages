@@ -4,7 +4,7 @@
 ## Usage
 1. create .env file
 1. pip install python-dotenv
-1. python main.py <GROWIのパス（例：/〇〇/××）>
+1. python main.py <Growiのページパス（例：/〇〇/××）>
 
 ## Requarements Env
 ```
