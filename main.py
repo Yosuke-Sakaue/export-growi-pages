@@ -46,9 +46,11 @@ def create_md_file(page_info: dict) -> None:
     """
     create folder and md file
     """
-    os.makedirs('output' + "/".join(page_info['path'].split("/")[:-1]), exist_ok=True)
+    growi_path = 'output' + page_info['path'].replace('"', '')
+    os.makedirs("/".join(growi_path.split("/")[:-1]), exist_ok=True)
     if not page_info['revision']['body'] == '':
-        with open('output' + page_info['path'] + '.md', "w", encoding="utf-8") as f:
+        
+        with open(growi_path + '.md', "w", encoding="utf-8") as f:
             f.write(page_info['revision']['body'])
         
     
