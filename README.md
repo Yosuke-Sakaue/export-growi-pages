@@ -10,5 +10,9 @@
 ```
 GROWI_BASE_URL
 GROWI_API_TOKEN
+FILE_NAME_ID_OPTION=False
 ```
+FILE_NAME_ID_OPTIONがTrueの場合、ファイル名がページIDで作成され、output配下へフラットに出力される
+※デフォルトはFalse
+
 https://tips.weseek.co.jp/5e4d5253340a4f0049473d2b
